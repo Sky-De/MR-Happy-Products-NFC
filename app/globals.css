@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  @apply border p-2;
+}
+.footer {
+  @apply border-2 p-2 mt-auto;
+}
+.img {
+  @apply border-4 max-w-screen-sm;
+}
