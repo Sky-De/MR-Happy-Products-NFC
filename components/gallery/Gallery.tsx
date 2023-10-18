@@ -2,17 +2,20 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 type GalleryType = {
-  products: string[];
+  products: string[] | { box?: string[]; light?: string[] };
 };
 const Gallery = ({ products }: GalleryType) => {
+  console.log(products);
+
   return (
     <section>
       <Carousel>
-        {products?.map((product) => (
-          <div key={product}>
-            <img className="img" src={product} />
-          </div>
-        ))}
+        {products &&
+          products?.map((product) => (
+            <div key={product._id}>
+              <img className="img" src={product.url} />
+            </div>
+          ))}
       </Carousel>
     </section>
   );

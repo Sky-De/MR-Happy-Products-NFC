@@ -5,9 +5,9 @@ import BoxModel from "@/models/product";
 export const GET = async (req: Request) => {
   try {
     connectToDB();
-    const products = await BoxModel.find();
+    const boxes = await BoxModel.find();
 
-    return new Response(JSON.stringify(products), {
+    return new Response(JSON.stringify(boxes), {
       status: 200,
     });
   } catch (error) {
