@@ -1,29 +1,19 @@
 "use client";
+import { ProductType } from "@/components/gallery/Gallery";
 import { useEffect, useState } from "react";
 
 type GetProductHookProps = {
-  type: "allProducts" | "box" | "light";
+  type: "box" | "light";
 };
 
 export const useGetPost = ({ type }: GetProductHookProps) => {
-  const [results, setResults] = useState<
-    { box?: string[]; light?: string[] } | string[]
-  >([]);
+  const [results, setResults] = useState<ProductType[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const getProducts = async () => {
     setIsLoading(true);
 
     try {
-      if (type === "allProducts") {
-        const res = await fetch("api/products", {
-          method: "GET",
-        });
-        if (res.ok) {
-          const data = await res.json();
-          setResults(data);
-        }
-      }
       if (type === "box") {
         const res = await fetch("api/products/box", {
           method: "GET",

@@ -1,8 +1,15 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
+export type ProductType = {
+  _id: string;
+  url: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
 type GalleryType = {
-  products: string[] | { box?: string[]; light?: string[] };
+  products: ProductType[];
 };
 const Gallery = ({ products }: GalleryType) => {
   console.log(products);
