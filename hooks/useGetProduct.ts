@@ -1,4 +1,3 @@
-"use client";
 import { ProductType } from "@/components/gallery/Gallery";
 import { useEffect, useState } from "react";
 
