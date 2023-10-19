@@ -1,5 +1,6 @@
 "use client";
 import Gallery, { ProductType } from "@/components/gallery/Gallery";
+import Loading from "@/components/loading/Loading";
 import React, { useEffect, useState } from "react";
 
 type pageProps = {
@@ -30,9 +31,14 @@ const product = ({ params }: pageProps) => {
     getProducts();
   }, [params.product]);
 
-  if (isLoading) return <h4>Loading...</h4>;
+  if (isLoading)
+    return (
+      <div className="w-full h-screen flex justify-center items-center">
+        <Loading />
+      </div>
+    );
 
-  return <Gallery products={products} />;
+  return <Gallery products={products} isLoading={isLoading} />;
 };
 
 export default product;

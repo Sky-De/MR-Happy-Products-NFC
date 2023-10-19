@@ -11,9 +11,11 @@ export type ProductType = {
 
 type GalleryType = {
   products: ProductType[];
+  isLoading: boolean;
 };
-const Gallery = ({ products }: GalleryType) => {
-  if (products.length < 1) return <h2>There is no product yet</h2>;
+const Gallery = ({ products, isLoading }: GalleryType) => {
+  if (products.length < 1 && !isLoading)
+    return <h2>There is no product yet</h2>;
 
   return (
     <section className=" h-full z-0 pt-2 flex justify-center">

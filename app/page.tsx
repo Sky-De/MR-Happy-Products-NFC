@@ -9,10 +9,18 @@ export default function Home() {
   return (
     <main className="main h-full flex">
       <section className="my-auto ">
-        <Image className="w-[80%] mx-auto" src={HeroSvg} alt="hero" />
+        <Image
+          loading="eager"
+          className="w-[80%] mx-auto"
+          src={HeroSvg}
+          alt="hero"
+        />
         <div className="content px-3">
           <h2 className="text-3xl font-bold title">
-            Mr. Happy's Enchanting Wonders Emporium
+            <span className="text-3xl font-bold title text-[#FFC727] ">
+              Mr. Happy
+            </span>
+            's Enchanting Wonders Emporium
           </h2>
           <p className="py-2 text-gray-500">
             Mr. Happy's Enchanting Wonders Emporium is your gateway to a world
