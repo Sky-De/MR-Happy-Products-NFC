@@ -13,7 +13,7 @@ type GalleryType = {
   products: ProductType[];
 };
 const Gallery = ({ products }: GalleryType) => {
-  console.log(products);
+  if (products.length < 1) return <h2>There is no product yet</h2>;
 
   return (
     <section className=" h-full z-0 pt-2 flex justify-center">
