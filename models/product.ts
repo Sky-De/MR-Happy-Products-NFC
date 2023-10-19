@@ -1,15 +1,20 @@
 import { Schema, model, models } from "mongoose";
 
-const BoxSchema = new Schema(
+const ProductSchema = new Schema(
   {
     url: {
       type: String,
       required: [true, "Product image URL is required."],
     },
+    type: {
+      type: String,
+      required: [true, "Product type is required."],
+    },
   },
   { timestamps: true }
 );
 
-const BoxModel = models.BoxModel || model("BoxModel", BoxSchema);
+const ProductModel =
+  models.ProductModel || model("ProductModel", ProductSchema);
 
-export default BoxModel;
+export default ProductModel;

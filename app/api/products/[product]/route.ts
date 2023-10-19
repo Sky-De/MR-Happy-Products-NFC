@@ -1,0 +1,30 @@
+import ProductModel from "@/models/product";
+
+type GetProps = {
+  params: { product: string };
+};
+
+export const GET = async (req: Request, { params }: GetProps) => {
+  try {
+    const result = await ProductModel.find({ type: params.product });
+    return new Response(JSON.stringify(result), {
+      status: 200,
+    });
+  } catch (error) {
+    return new Response("Faild to get products", { status: 500 });
+  }
+};
+
+type DeleteProps = {
+  params: { product: string };
+};
+export const DELETE = async (req: Request, { params }: DeleteProps) => {
+  try {
+    await ProductModel.findByIdAndRemove(params.product);
+    return new Response(JSON.stringify("product deleted."), {
+      status: 200,
+    });
+  } catch (error) {
+    return new Response("Faild to get products", { status: 500 });
+  }
+};

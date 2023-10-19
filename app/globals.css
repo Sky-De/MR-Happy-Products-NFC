@@ -11,3 +11,7 @@
 .img {
   @apply border-4 max-w-screen-sm;
 }
+
+.active {
+  @apply font-bold text-white bg-black;
+}

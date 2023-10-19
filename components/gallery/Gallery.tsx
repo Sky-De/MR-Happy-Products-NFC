@@ -1,5 +1,6 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import Image from "next/image";
 
 export type ProductType = {
   _id: string;
@@ -15,12 +16,12 @@ const Gallery = ({ products }: GalleryType) => {
   console.log(products);
 
   return (
-    <section>
+    <section className=" h-full z-0 pt-2 flex justify-center">
       <Carousel>
         {products &&
           products?.map((product) => (
             <div key={product._id}>
-              <img className="img" src={product.url} />
+              <img loading="lazy" alt="product" src={product.url} />
             </div>
           ))}
       </Carousel>

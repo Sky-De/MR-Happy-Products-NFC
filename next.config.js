@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    // change this to cloudinary url
+    domains: ["picsum.photos", "fastly.picsum.photos", "res.cloudinary"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
