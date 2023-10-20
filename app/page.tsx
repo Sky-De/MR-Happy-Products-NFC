@@ -15,14 +15,14 @@ export default function Home() {
           src={HeroSvg}
           alt="hero"
         />
-        <div className="content px-3">
-          <h2 className="text-3xl font-bold title">
-            <span className="text-3xl font-bold title text-[#FFC727] ">
+        <div className="content px-4">
+          <h2 className="text-4xl font-bold title text-center">
+            <span className="text-4xl font-bold title text-[#FFC727] ">
               Mr. Happy
             </span>
             's Enchanting Wonders Emporium
           </h2>
-          <p className="py-2 text-gray-500">
+          <p className="py-4 text-gray-500 text-center">
             Mr. Happy's Enchanting Wonders Emporium is your gateway to a world
             of joy and magic. Explore mesmerizing tricks, delightful gifts,
             captivating lights, toys, and more. Transform moments with surprise
