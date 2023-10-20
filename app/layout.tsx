@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} h-screen flex flex-col`}>
+      <body
+        className={`${inter.className} h-[90vh] flex flex-col border-4 border-red-500`}
+      >
         {children}
         <Header />
       </body>
