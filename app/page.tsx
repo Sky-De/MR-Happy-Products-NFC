@@ -11,7 +11,7 @@ export default function Home() {
       <section className="my-auto ">
         <Image
           loading="eager"
-          className="w-[80%] mx-auto"
+          className="w-[80%] max-w-[500px] mx-auto"
           src={HeroSvg}
           alt="hero"
         />
