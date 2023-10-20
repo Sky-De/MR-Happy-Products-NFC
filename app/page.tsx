@@ -12,13 +12,18 @@ export default function Home() {
       <section className="my-auto ">
         <Image
           loading="eager"
-          className="w-[80%] md:w-[50%] max-w-[400px] mx-auto"
+          className="w-[80%] md:w-[50%] max-w-[400px] mx-auto heroImage"
           src={HeroSvg}
           alt="hero"
         />
         <div className="content px-4 flex flex-col justify-center items-center">
-          <Image src={MrHappyLogo} alt="logo" width={250} />
-          <p className="py-4 text-gray-500 text-center font-bold">
+          <Image
+            src={MrHappyLogo}
+            alt="logo"
+            width={250}
+            className="heroName"
+          />
+          <p className="description py-4 text-gray-500 text-center font-bold">
             فروشگاه شگفتی‌های جادویی مستر هپی دروازه‌ای به دنیای شادی و جادو
             برای شما باز می‌کند. در اینجا، ترفندهای جذاب، هدایا شگفت‌انگیز، فندک
             های جذاب اسباب بازی و موارد دیگر را کاوش کنید. لحظات خود را با تعجب
