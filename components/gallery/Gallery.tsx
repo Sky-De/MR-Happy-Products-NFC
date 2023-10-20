@@ -14,6 +14,8 @@ type GalleryType = {
   isLoading: boolean;
 };
 const Gallery = ({ products, isLoading }: GalleryType) => {
+  console.log(products);
+
   if (products.length < 1 && !isLoading)
     return <h2>There is no product yet</h2>;
 
