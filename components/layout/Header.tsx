@@ -8,38 +8,76 @@ const NavItems = [
     path: "/",
   },
   {
-    name: "box",
+    name: "باکس",
     path: "/box",
   },
   {
-    name: "light",
+    name: "فندک",
     path: "/light",
   },
   {
-    name: "flask",
+    name: "فلاسک",
     path: "/flask",
   },
   {
-    name: "pod",
+    name: "پاد",
     path: "/pod",
   },
   {
-    name: "musical",
+    name: "موزیکال",
     path: "/musical",
   },
   {
-    name: "perfume",
+    name: "ادکلن",
     path: "/perfume",
   },
   {
-    name: "toy",
+    name: "عروسک",
     path: "/toy",
   },
   {
-    name: "mug",
+    name: "ماگ",
     path: "/mug",
   },
 ];
+// const NavItems1 = [
+//   {
+//     name: "Mr",
+//     path: "/",
+//   },
+//   {
+//     name: "box",
+//     path: "/box",
+//   },
+//   {
+//     name: "light",
+//     path: "/light",
+//   },
+//   {
+//     name: "flask",
+//     path: "/flask",
+//   },
+//   {
+//     name: "pod",
+//     path: "/pod",
+//   },
+//   {
+//     name: "musical",
+//     path: "/musical",
+//   },
+//   {
+//     name: "perfume",
+//     path: "/perfume",
+//   },
+//   {
+//     name: "toy",
+//     path: "/toy",
+//   },
+//   {
+//     name: "mug",
+//     path: "/mug",
+//   },
+// ];
 
 const Header = () => {
   const pathname = usePathname();
