@@ -18,6 +18,7 @@ export default function Home() {
         />
         <div className="content px-4 flex flex-col justify-center items-center">
           <Image
+            loading="eager"
             src={MrHappyLogo}
             alt="logo"
             width={250}

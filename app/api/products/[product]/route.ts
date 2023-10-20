@@ -9,7 +9,6 @@ export const GET = async (req: Request, { params }: GetProps) => {
   try {
     connectToDB();
     const result = await ProductModel.find({ type: params.product });
-    console.log(result, "result");
 
     return new Response(JSON.stringify(result), {
       status: 200,
