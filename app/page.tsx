@@ -4,6 +4,7 @@ import { useGetPost } from "@/hooks/useGetProduct";
 import { useState } from "react";
 import HeroSvg from "../public/hero.svg";
 import Image from "next/image";
+import MrHappyLogo from "../public/mr.svg";
 
 export default function Home() {
   return (
@@ -11,23 +12,18 @@ export default function Home() {
       <section className="my-auto ">
         <Image
           loading="eager"
-          className="w-[80%] max-w-[500px] mx-auto"
+          className="w-[80%] md:w-[50%] max-w-[400px] mx-auto"
           src={HeroSvg}
           alt="hero"
         />
-        <div className="content px-4">
-          <h2 className="text-4xl font-bold title text-center">
-            <span className="text-4xl font-bold title text-[#FFC727] ">
-              Mr. Happy
-            </span>
-            's Enchanting Wonders Emporium
-          </h2>
-          <p className="py-4 text-gray-500 text-center">
-            Mr. Happy's Enchanting Wonders Emporium is your gateway to a world
-            of joy and magic. Explore mesmerizing tricks, delightful gifts,
-            captivating lights, toys, and more. Transform moments with surprise
-            and enchantment. Choose from our curated collection and share the
-            joy of gifting from our emporium.
+        <div className="content px-4 flex flex-col justify-center items-center">
+          <Image src={MrHappyLogo} alt="logo" width={250} />
+          <p className="py-4 text-gray-500 text-center font-bold">
+            فروشگاه شگفتی‌های جادویی مستر هپی دروازه‌ای به دنیای شادی و جادو
+            برای شما باز می‌کند. در اینجا، ترفندهای جذاب، هدایا شگفت‌انگیز، فندک
+            های جذاب اسباب بازی و موارد دیگر را کاوش کنید. لحظات خود را با تعجب
+            و جادو تغییر دهید. از مجموعه گزینه‌های انتخابی ما را انتخاب کنید و
+            شادی هدیه دادن از فروشگاه ما را به اشتراک بگذارید
           </p>
         </div>
       </section>
