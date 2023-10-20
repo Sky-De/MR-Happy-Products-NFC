@@ -1,4 +1,6 @@
+"use client";
 import Maintenance from "@/components/error/maintain";
+
 import React, { ReactNode } from "react";
 
 type ErrorBoundaryProps = {

@@ -1,5 +1,5 @@
 import MaintenanceSvg from "@/public/maintain.svg";
-import "./style.scss";
+import "./style.css";
 const Maintenance: React.FC = () => {
   return (
     <main className="maintenance">

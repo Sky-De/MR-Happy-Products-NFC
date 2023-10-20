@@ -1,0 +1,16 @@
+.maintenance {
+  min-height: 100vh;
+  display: flex !important;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.maintenance__svg {
+  max-height: 80vh;
+}
+
+.maintenance h3 {
+  color: red;
+}
+.maintenance h4 {
+  color: blue;
+}
