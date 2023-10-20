@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 const NavItems = [
   {
-    name: "home",
+    name: "Mr",
     path: "/",
   },
   {
@@ -49,7 +49,7 @@ const Header = () => {
     // replace border with shadow-FIX
     <header className="header w-full sticky top-0 z-10  bg-white">
       <nav className="w-full">
-        <ul className="flex max-w-full gap-y-2 overflow-scroll ">
+        <ul className="flex max-w-full gap-y-2 overflow-scroll pr-12">
           {NavItems.map((item) => (
             <li
               key={item.path}

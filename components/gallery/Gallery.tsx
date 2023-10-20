@@ -20,7 +20,7 @@ const Gallery = ({ products, isLoading }: GalleryType) => {
     return <h2>There is no product yet</h2>;
 
   return (
-    <section className=" h-full z-0 pt-2 flex justify-center">
+    <section className=" h-full max-h-[90vh] z-0 pt-2 flex justify-center">
       <Carousel>
         {products &&
           products?.map((product) => (
