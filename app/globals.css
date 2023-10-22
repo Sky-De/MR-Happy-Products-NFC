@@ -47,11 +47,11 @@
   opacity: 0;
 }
 .heroImage {
-  animation: fadeIn 2s 1.5s forwards;
+  animation: fadeIn 1s 1.25s forwards;
   opacity: 0;
 }
 .description {
-  animation: fadeIn 3s 2.5s forwards;
+  animation: fadeIn 0.5s 1.75s forwards;
   opacity: 0;
 }
 
