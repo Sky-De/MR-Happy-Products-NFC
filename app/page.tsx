@@ -24,7 +24,7 @@ export default function Home() {
             width={250}
             className="heroName"
           />
-          <p className="description py-4 text-gray-500 text-center font-bold">
+          <p className="description py-4 text-gray-500 text-center ">
             فروشگاه شگفتی‌های جادویی مستر هپی دروازه‌ای به دنیای شادی و جادو
             برای شما باز می‌کند. در اینجا، ترفندهای جذاب، هدایا شگفت‌انگیز، فندک
             های جذاب اسباب بازی و موارد دیگر را کاوش کنید. لحظات خود را با تعجب

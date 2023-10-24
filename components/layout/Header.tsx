@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 const NavItems = [
   {
-    name: ":)مستر",
+    name: "خانه",
     path: "/",
   },
   {
@@ -94,7 +94,7 @@ const Header = () => {
           {NavItems.map((item) => (
             <li
               key={item.path}
-              className={`px-5 py-3 border-r rounded-md ${
+              className={`px-5 linkItem py-3 border-r rounded-md ${
                 item.path === pathname ? "active" : ""
               }`}
             >
