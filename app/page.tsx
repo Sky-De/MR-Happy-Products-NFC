@@ -12,7 +12,7 @@ export default function Home() {
       <section className="my-auto ">
         <Image
           loading="eager"
-          className="w-[80%] md:w-[50%] max-w-[400px] mx-auto heroImage"
+          className="w-[70%] md:w-[50%] max-w-[400px] mx-auto heroImage"
           src={HeroSvg}
           alt="hero"
         />
@@ -21,7 +21,7 @@ export default function Home() {
             loading="eager"
             src={MrHappyLogo}
             alt="logo"
-            width={250}
+            width={200}
             className="heroName"
           />
           <p className="description py-4 text-gray-500 text-center ">

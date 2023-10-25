@@ -21,7 +21,7 @@ export default function RootLayout({
     <ErrorBoundary>
       <html lang="en">
         <body
-          className={`${inter.className} h-[90vh] md:h-screen flex flex-col`}
+          className={`${inter.className} h-screen max-h-screen flex flex-col`}
         >
           {children}
           <Header />
