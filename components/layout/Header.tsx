@@ -81,25 +81,25 @@ const NavItems = [
 
 const Header = () => {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     // replace border with shadow-FIX
-    <header className="header w-full sticky top-0 z-10  bg-white mt-auto">
+    <header className="header w-full sticky top-0 z-10  bg-white">
       <nav className="w-full">
         <ul
           className="flex
         flex-row-reverse max-w-full gap-2 overflow-scroll pl-14 py-2"
         >
           {NavItems.map((item) => (
-            <li
-              key={item.path}
-              className={`px-5 linkItem py-3 border rounded-md ${
-                item.path === pathname ? "active" : ""
-              }`}
-            >
-              <Link href={item.path}>{item.name.toUpperCase()}</Link>
-            </li>
+            <Link key={item.path} href={item.path}>
+              <li
+                className={`px-5 linkItem py-3 border rounded-md ${
+                  item.path === pathname ? "active" : ""
+                }`}
+              >
+                {item.name.toUpperCase()}
+              </li>
+            </Link>
           ))}
         </ul>
       </nav>
