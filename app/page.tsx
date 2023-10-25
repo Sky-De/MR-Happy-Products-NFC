@@ -15,6 +15,7 @@ export default function Home() {
           className="w-[70%] md:w-[50%] max-w-[400px] mx-auto heroImage"
           src={HeroSvg}
           alt="hero"
+          title="https://storyset.com/illustration/magic-trick/cuate"
         />
         <div className="content px-4 flex flex-col justify-center items-center">
           <Image
@@ -24,7 +25,7 @@ export default function Home() {
             width={200}
             className="heroName"
           />
-          <p className="description py-4 text-gray-500 text-center ">
+          <p className="description py-4 text-gray-700 text-center">
             فروشگاه شگفتی‌های جادویی مستر هپی دروازه‌ای به دنیای شادی و جادو
             برای شما باز می‌کند. در اینجا، ترفندهای جذاب، هدایا شگفت‌انگیز، فندک
             های جذاب اسباب بازی و موارد دیگر را کاوش کنید. لحظات خود را با تعجب

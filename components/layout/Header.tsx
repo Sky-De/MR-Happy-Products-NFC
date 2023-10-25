@@ -85,16 +85,16 @@ const Header = () => {
 
   return (
     // replace border with shadow-FIX
-    <header className="header w-full sticky top-0 z-10  bg-white mt-auto shadow-inner">
+    <header className="header w-full sticky top-0 z-10  bg-white mt-auto">
       <nav className="w-full">
         <ul
           className="flex
-        flex-row-reverse max-w-full gap-y-2 overflow-scroll pl-12"
+        flex-row-reverse max-w-full gap-2 overflow-scroll pl-14 py-2"
         >
           {NavItems.map((item) => (
             <li
               key={item.path}
-              className={`px-5 linkItem py-3 border-r rounded-md ${
+              className={`px-5 linkItem py-3 border rounded-md ${
                 item.path === pathname ? "active" : ""
               }`}
             >

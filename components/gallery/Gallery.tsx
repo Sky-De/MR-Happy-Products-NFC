@@ -18,8 +18,8 @@ const Gallery = ({ products, isLoading }: GalleryType) => {
     return <h2>There is no product yet</h2>;
 
   return (
-    <section className=" h-full max-h-[85vh] md:max-h-screen z-0 w-screen pt-2 flex justify-center overflow-hidden max-w-[400px] mx-auto">
-      <Carousel className="">
+    <section className=" h-full border-4 border-red-500 md:max-h-screen z-0 w-screen pt-2 flex justify-center overflow-hidden max-w-[400px] mx-auto">
+      <Carousel className="border-4 border-red-500 w-screen">
         {products &&
           products?.map((product) => (
             <div key={product._id}>

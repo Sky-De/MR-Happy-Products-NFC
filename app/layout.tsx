@@ -23,8 +23,8 @@ export default function RootLayout({
         <body
           className={`${inter.className} h-screen max-h-screen flex flex-col`}
         >
-          {children}
           <Header />
+          {children}
         </body>
       </html>
     </ErrorBoundary>

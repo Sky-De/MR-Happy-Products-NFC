@@ -17,7 +17,7 @@
 }
 
 .header {
-  @apply border p-2;
+  @apply p-2 shadow-lg;
 }
 .header::after {
   content: "";
