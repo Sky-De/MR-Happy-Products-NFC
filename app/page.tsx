@@ -23,7 +23,7 @@ export default function Home() {
             href="https://www.instagram.com/mr.happy1395?utm_source=qr"
             target="_blank"
           >
-            <img src={InstaLogo} alt="insta" />
+            <Image width={50} src={InstaLogo} alt="insta" />
           </a>
           <Image
             loading="eager"
