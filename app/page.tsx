@@ -5,6 +5,7 @@ import { useState } from "react";
 import HeroSvg from "../public/hero.svg";
 import Image from "next/image";
 import MrHappyLogo from "../public/mr.svg";
+import InstaLogo from "../public/insta.svg";
 
 export default function Home() {
   return (
@@ -18,6 +19,12 @@ export default function Home() {
           title="https://storyset.com/illustration/magic-trick/cuate"
         />
         <div className="content px-4 flex flex-col justify-center items-center">
+          <a
+            href="https://www.instagram.com/mr.happy1395?utm_source=qr"
+            target="_blank"
+          >
+            <img src={InstaLogo} alt="insta" />
+          </a>
           <Image
             loading="eager"
             src={MrHappyLogo}
